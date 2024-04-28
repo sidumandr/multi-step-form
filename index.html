@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Multi Step Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form1">
+            <h3>Hesap Olustur</h3>
+            <input type="text" placeholder="Kullanıcı Adı">
+            <input type="password" placeholder="Şifre">
+            <input type="password" placeholder="Şifre Doğrulama">
+            <div class="btn-box">
+                <button type="button" id="next-1">İleri</button>
+            </div>
+        </form>
+
+        <form id="form2">
+            <h3>Hesap Olustur</h3>
+            <input type="text" placeholder="E-Posta">
+            <input type="text" placeholder="Kurtarma E-Postası">
+            <input type="text" placeholder="Cep Telefonu">
+            <div class="btn-box">
+                <button type="button" id="back-1">Geri</button>
+                <button type="button" id="next-2">İleri</button>
+            </div>
+        </form>
+
+        <form id="form3">
+            <h3>Hesap Olustur</h3>
+            <input type="text" placeholder="Adres">
+            <input type="text" placeholder="Şehir">
+            <input type="text" placeholder="Posta Kodu">
+            <div class="btn-box">
+                <button type="button" id="back-2">Geri</button>
+                <button type="button" id="submit">Gönder</button>
+            </div>
+        </form>
+
+        <form id="finish">
+            <h3>Hesap Olusturma İşlemi Başarıyla Sonuçlandı.</h3>
+            <div class="wrapper"> 
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                 </svg>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>İlk Adım</small></div>
+            <div class="step-col"><small>İkinci Adım</small></div>
+            <div class="step-col"><small>Son Adım</small></div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
